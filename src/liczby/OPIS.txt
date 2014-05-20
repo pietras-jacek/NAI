@@ -1,0 +1,18 @@
+Jest to program oparty na sieciach neuronowych który rozpoznaje cyfry z zakresu 0-9.
+Cyfry rysuje się w wyznaczonym do tego polu
+
+Dokładny opis algorytmu znajduje się na  w sekcji Variants na stronie: 
+http://en.wikipedia.org/wiki/Perceptron
+
+
+Uproszczony opis algorytmu kieszonkowego:
+
+Algorytm kieszonkowy uczenia sieci (Gallant 1990)
+Próbuje wykorzystać sukcesy, nie tylko błędy.
+Stosowany do wzorców binarnych: 
+Przypadkowa inicjalizacja wag.
+Przypadkowo wybieraj wektory do uczenia.
+Policz, po ilu wektorach N(p) pojawia się błąd, zapamiętaj ostatnie wagi W(p) w „kieszonce” i dokonaj korekty W= W(p)+ DW(p). 
+Przypadkowo wybieraj wektory do uczenia i licz, kiedy pojawi się błąd; jeśli N<N(p) to weź W=W(p).
+Powtarza aż do skutku
+Można udowodnić, że algorytm znajduje optymalne wagi.
